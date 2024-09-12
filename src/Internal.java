@@ -9,6 +9,12 @@ class Internal {
     private static HashSet<String> pathDirectoryFiles = new HashSet<>();
 
     protected static String createDir(String nameDirectory) throws FileSystemException {
+        /**
+        Create a directory
+        @param nameDirectory 
+        @return The result of the execution
+        @author santalovdv@mts.ru
+        */
 
         try {
 
@@ -30,6 +36,12 @@ class Internal {
     }
 
     protected static String deleteDir(File dir) throws FileSystemException {
+        /**
+        Delete a directory
+        @param dir 
+        @return The result of the execution
+        @author santalovdv@mts.ru
+        */
 
         dir.delete();
 
@@ -38,12 +50,24 @@ class Internal {
     }
 
     protected static boolean isPathDirectory(String path) {
+        /**
+        Сhecking the existence of a directory
+        @param path to directory 
+        @return boolean 
+        @author santalovdv@mts.ru
+        */
 
         return pathDirectoryFiles.equals(path);
 
     }
 
     protected static String mappingFiles(ArrayList<String> fileNames) throws FileSystemException, ArrayStoreException {
+        /**
+       The main method that checks and creates directories based on files
+        @param fileNames 
+        @return The result of the execution
+        @author santalovdv@mts.ru
+        */
 
         String rootDirectory = "C:/Users/santalovdv/Desktop/hello/";
         String targetDirectory = "C:/Users/santalovdv/Desktop/";
@@ -80,6 +104,12 @@ class Internal {
     }
 
     public static void getSuchDirectory() throws ArrayStoreException {
+        /**
+        Getter this.HashSet
+        @param  
+        @return The result of the execution
+        @author santalovdv@mts.ru
+        */
 
         try {
 
@@ -97,7 +127,13 @@ class Internal {
 
     }
 
-    public static long lastModify(String pathFile) {
+    private static long lastModify(String pathFile) {
+        /**
+        The last modification of the file
+        @param path to directory 
+        @return long
+        @author santalovdv@mts.ru
+        */
 
         File file = new File(pathFile);
 
@@ -108,6 +144,12 @@ class Internal {
     }
 
     protected static boolean isActiveModify(String pathFile) {
+        /**
+        Has the file been updated recently
+        @param path to directory 
+        @return boolean
+        @author santalovdv@mts.ru
+        */
 
         long currentTime = System.currentTimeMillis();
         boolean isModify = false;
@@ -124,12 +166,24 @@ class Internal {
     }
 
     private static String removeTheExtension(String file) {
+        /**
+        Replace file name
+        @param path to directory 
+        @return String
+        @author santalovdv@mts.ru
+        */
 
         return file.substring(0, file.indexOf('.'));
 
     }
 
     protected static ArrayList<String> filesList(String path) {
+        /**
+        Get the file name
+        @param path to directory 
+        @return ArrayList
+        @author santalovdv@mts.ru
+        */
 
         File filePath = new File(path);
         String[] fileLists = filePath.list();
