@@ -49,7 +49,7 @@ class Internal {
 
     }
 
-    protected static boolean isPathDirectory(String path) {
+    private static boolean isPathDirectory(String path) {
         /**
         Сhecking the existence of a directory
         @param path to directory 
