@@ -200,16 +200,4 @@ class Internal {
 
 }
 
-    //    class Main {
-//
-//    public static void main(String[] args) throws IOException {
-////
-//////        ArrayList<String> test = new ArrayList<String>();
-//////        ExcelMethods.CreateFile("C:/Users/santalovdv/Desktop/CVM_all.xlsx", "C:/Users/santalovdv/Desktop/testFile.csv");
-//////        test.add("test1.xlsx");
-//////        test.add("test2.xlsx");
-//////        test.add("cvm_itog_dashboard.sql");
-//
-////    }
-////}
-////
+
